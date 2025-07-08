@@ -16,10 +16,14 @@
 </head>
 <body>
 <!-- For Maintance-->
-    <div class="mobile-notice" id="mobileNotice">
-    <p>🚧 This site is under maintenance, but you can still visit.</p>
-    <span class="close-btn" onclick="closeNotice()">✖</span>
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-box">
+    <span class="popup-close" onclick="closePopup()">✖</span>
+    <h2>🚧 Under Maintenance</h2>
+    <p>This site is under maintenance, but you can still visit.</p>
+  </div>
 </div>
+
 
     <nav>
         <div class="nav-container">
@@ -88,11 +92,19 @@
             }
         </script>
 <!-- For Maintance-->
-    <script>
-function closeNotice() {
-    document.getElementById("mobileNotice").style.display = "none";
+<script>
+function closePopup() {
+    document.getElementById("popupOverlay").style.display = "none";
+}
+
+// Show popup only on mobile
+window.onload = () => {
+    if (window.innerWidth <= 767) {
+        document.getElementById("popupOverlay").style.display = "flex";
+    }
 }
 </script>
+
 
 </body>
 </html>
