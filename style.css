@@ -5,6 +5,7 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+max-width: 100vw;
 }
 p{
     text-align: justify;
@@ -22,6 +23,7 @@ body{
     width: 100%;
     height: 100vh;
     background: linear-gradient(to right, rgb(255,255,255), #daa974);
+    overflow-x: hidden !important;
 }
 
 nav{
@@ -318,6 +320,7 @@ footer {
 @media (max-width:884px) {
     body{
         overflow-y: visible;
+        overflow-x: hidden;
     }
 
     nav .logo{
@@ -330,6 +333,8 @@ footer {
     .main-container{
         display: flex;
         flex-direction: column;
+         width: 100%;
+        padding: 0 1rem;
     }
 
     .nav-container .links{
@@ -354,8 +359,13 @@ footer {
     }
 
     .main-container .image{
-        width: 80%;
+        width: 100%;
         margin-bottom: 0px;
+        padding: 0 1rem;
+    }
+    .content p {
+        font-size: 1rem;
+        text-align: justify:
     }
 }
 
