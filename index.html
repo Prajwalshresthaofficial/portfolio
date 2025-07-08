@@ -15,6 +15,12 @@
     <link rel="icon" type="image/png" href="icon.png">
 </head>
 <body>
+/*for maintance*/
+    <div class="mobile-notice" id="mobileNotice">
+    <p>🚧 This site is under maintenance, but you can still visit.</p>
+    <span class="close-btn" onclick="closeNotice()">✖</span>
+</div>
+
     <nav>
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
@@ -81,5 +87,12 @@
                 navbar.style.transform = "translateY(-500px)"
             }
         </script>
+/* for maintance*/
+    <script>
+function closeNotice() {
+    document.getElementById("mobileNotice").style.display = "none";
+}
+</script>
+
 </body>
 </html>
