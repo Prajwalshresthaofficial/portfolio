@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Contact - Prajwal Shrestha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+        /* Contact page styling */
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+          
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .contact-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .contact-header p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .contact-details {
+            max-width: 600px;
+            width: 100%;
+            background: rgb(207, 157, 76);;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            
+        }
+
+        .contact-details h2 {
+            margin-bottom: 20px;
+            color: #020202;
+        }
+
+        .contact-details p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .social-links {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #007bff;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Prajwal</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="services.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="blogs.html">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact </a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="services.html">Services</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="contact-container"  >
+            <div class="contact-header" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                <h1>Contact Me</h1>
+                <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+            </div>
+            <div class="contact-details" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
+                <h2>Contact Information</h2>
+                <p><strong>Location:</strong> Kathmandu, Nepal</p>
+                <p><strong>Contact No:</strong> <a href="tel:+9779819367684"> +977-9819367684</a></p>
+                </p>
+                <p><strong>Email:</strong> <a href="mailto:prajwalshresthaofficial@gmail.com">prajwalshresthaofficial@gmail.com</a></p>
+            </div>
+            <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Prajwalshresthaa" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <footer style="background-color: #f1e1ce; text-align: center; padding: 15px 0; margin-top: 40px;">
+  <p style="margin: 0; color: #444; text-align: center;">
+    &copy; 2025 Prajwal Shrestha. All Rights Reserved.
+  </p>
+</footer>
+</body>
+</html>
