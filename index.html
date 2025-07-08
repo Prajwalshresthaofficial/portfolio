@@ -15,16 +15,6 @@
     <link rel="icon" type="image/png" href="icon.png">
 </head>
 <body>
-<!-- For Maintance-->
-<div class="popup-overlay" id="popupOverlay">
-  <div class="popup-box">
-    <span class="popup-close" onclick="closePopup()">✖</span>
-    <h2>🚧 Under Maintenance</h2>
-    <p>This site is under maintenance, but you can still visit.</p>
-  </div>
-</div>
-
-
     <nav>
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
@@ -93,16 +83,7 @@
         </script>
 <!-- For Maintance-->
 <script>
-function closePopup() {
-    document.getElementById("popupOverlay").style.display = "none";
-}
-
-// Show popup only on mobile
-window.onload = () => {
-    if (window.innerWidth <= 767) {
-        document.getElementById("popupOverlay").style.display = "flex";
-    }
-}
+alert("<strong>Notice</strong>This site is under maintenance, but you can still visit");
 </script>
 
 
