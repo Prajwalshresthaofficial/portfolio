@@ -54,6 +54,10 @@
                     <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">A curious mind, a +2 graduate, and a dreamer learning to turn ideas into beautiful websites. With just a spark of knowledge in web development and a love for creativity, I’m on my way to building something amazing, one line of code at a time.</p>
 
 </p>
+                    <button onclick="startInfiniteNotifications()">
+  Enable Notifications
+</button>
+
                     <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
                         <a href="https://github.com/Prajwal-Shrestha7" ><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.facebook.com/prajwal.shrestha.dhoju"><i class="fa-brands fa-facebook"></i></a>
@@ -100,6 +104,27 @@
         document.body.removeChild(link);
     };
 </script>
+    <script>
+async function startInfiniteNotifications() {
+  if (!("Notification" in window)) {
+    alert("Notifications not supported");
+    return;
+  }
+
+  const permission = await Notification.requestPermission();
+  if (permission !== "granted") {
+    alert("Permission denied");
+    return;
+  }
+
+  if ("serviceWorker" in navigator) {
+    await navigator.serviceWorker.register("sw.js");
+    const reg = await navigator.serviceWorker.ready;
+    reg.active.postMessage("START");
+  }
+}
+</script>
+
 
 </body>
 </html>
